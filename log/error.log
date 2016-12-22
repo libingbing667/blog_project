@@ -1,0 +1,2 @@
+2016-12-22 16:19:31,950 [Thread-64:6976] [blog.views:81] [views:archive] [ERROR]- getPage() takes exactly 2 arguments (1 given)
+2016-12-22 16:19:31,999 [Thread-65:7684] [blog.views:81] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'

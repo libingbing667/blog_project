@@ -1,0 +1,497 @@
+2016-12-22 16:00:40,362 [Thread-15:7000] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/tag/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2016-12-22 16:01:01,174 [Thread-21:204] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-12-22 16:01:02,644 [Thread-23:5564] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-12-22 16:01:20,854 [Thread-31:1300] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/category/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+2016-12-22 16:01:27,528 [Thread-37:6600] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-12-22 16:04:11,125 [Thread-3:7720] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-12-22 16:04:16,697 [Thread-4:3488] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-12-22 16:05:08,042 [Thread-37:1488] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/tag/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2016-12-22 16:07:26,398 [Thread-2:6800] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/tag/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2016-12-22 16:07:45,749 [Thread-11:5704] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/category/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2016-12-22 16:09:38,686 [Thread-2:6824] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\blog_project\blog\views.py", line 68, in index
+    return render(request, 'index.html', locals())
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "C:\Python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "C:\Python27\lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "C:\Python27\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "C:\blog_project\blog\views.py", line 40, in global_setting
+    result_list = Comment.objects.with_counts()
+AttributeError: 'Manager' object has no attribute 'with_counts'
+2016-12-22 16:11:50,322 [Thread-2:760] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\blog_project\blog\views.py", line 68, in index
+    return render(request, 'index.html', locals())
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "C:\Python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "C:\Python27\lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "C:\Python27\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "C:\blog_project\blog\views.py", line 40, in global_setting
+    result_list = Comment.objects.with_counts()
+  File "C:\blog_project\blog\models.py", line 121, in with_counts
+    for row in cursor.fetchall():
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 104, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 104, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\pymysql\cursors.py", line 296, in fetchall
+    self._check_executed()
+  File "C:\Python27\lib\site-packages\pymysql\cursors.py", line 76, in _check_executed
+    raise err.ProgrammingError("execute() first")
+ProgrammingError: execute() first
+2016-12-22 16:12:15,019 [Thread-2:7472] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\blog_project\blog\views.py", line 68, in index
+    return render(request, 'index.html', locals())
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "C:\Python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "C:\Python27\lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "C:\Python27\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "C:\blog_project\blog\views.py", line 40, in global_setting
+    result_list = Comment.objects.with_counts()
+  File "C:\blog_project\blog\models.py", line 121, in with_counts
+    for row in cursor.fetchall():
+NameError: global name 'cursor' is not defined
+2016-12-22 16:12:17,329 [Thread-4:6456] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\blog_project\blog\views.py", line 68, in index
+    return render(request, 'index.html', locals())
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "C:\Python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "C:\Python27\lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "C:\Python27\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "C:\blog_project\blog\views.py", line 40, in global_setting
+    result_list = Comment.objects.with_counts()
+  File "C:\blog_project\blog\models.py", line 121, in with_counts
+    for row in cursor.fetchall():
+NameError: global name 'cursor' is not defined
+2016-12-22 16:12:35,562 [Thread-2:7860] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\blog_project\blog\views.py", line 68, in index
+    return render(request, 'index.html', locals())
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "C:\Python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "C:\Python27\lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "C:\Python27\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "C:\blog_project\blog\views.py", line 40, in global_setting
+    result_list = Comment.objects.with_counts()
+  File "C:\blog_project\blog\models.py", line 124, in with_counts
+    return result_list
+NameError: global name 'result_list' is not defined
+2016-12-22 16:12:39,233 [Thread-3:6924] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\blog_project\blog\views.py", line 68, in index
+    return render(request, 'index.html', locals())
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "C:\Python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "C:\Python27\lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "C:\Python27\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "C:\blog_project\blog\views.py", line 40, in global_setting
+    result_list = Comment.objects.with_counts()
+  File "C:\blog_project\blog\models.py", line 124, in with_counts
+    return result_list
+NameError: global name 'result_list' is not defined
+2016-12-22 16:13:25,789 [Thread-7:7496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-12-22 16:13:44,592 [Thread-17:6852] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/category/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2016-12-22 16:14:09,563 [Thread-18:7524] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/category/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2016-12-22 16:15:11,496 [Thread-2:7880] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/category/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+2016-12-22 16:18:03,913 [Thread-34:7568] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-12-22 16:18:47,736 [Thread-55:2468] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-12-22 16:18:48,826 [Thread-56:248] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /category/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\blog_project\blog\views.py", line 282, in category
+    return render(request, 'category.html', locals())
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: category.html
+2016-12-22 16:19:18,584 [Thread-62:3084] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-12-22 16:19:20,414 [Thread-63:6204] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\blog_project\blog\views.py", line 160, in article
+    return render(request, 'article.html', locals())
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "C:\Python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 1159, in load
+    (taglib, e))
+TemplateSyntaxError: 'myfilter' is not a valid tag library: Template library myfilter not found, tried django.templatetags.myfilter,django.contrib.admin.templatetags.myfilter,django.contrib.staticfiles.templatetags.myfilter
+2016-12-22 16:19:54,187 [Thread-75:8096] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/comment/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 92, in force_text
+    s = six.text_type(s)
+  File "C:\blog_project\blog\models.py", line 149, in __unicode__
+    return str(self.content)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+2016-12-22 16:20:47,119 [Thread-2:3396] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/comment/add/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "C:\Python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "C:\Python27\lib\site-packages\django\utils\encoding.py", line 92, in force_text
+    s = six.text_type(s)
+  File "C:\blog_project\blog\models.py", line 149, in __unicode__
+    return __unicode__(self.content)
+NameError: global name '__unicode__' is not defined
