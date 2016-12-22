@@ -1,20 +1,18 @@
 # -*- coding:utf-8 -*-
-import pdb
-from django.shortcuts import render,redirect
 import logging
-from django.conf import settings
-# from django.db.models import Count
-from blog.models import *
-# 这是django的原生分页类，可以做许多设置
-from django.core.paginator import Paginator,\
-    InvalidPage, EmptyPage, PageNotAnInteger
-# 导入定义的表单类
-from blog.forms import *
-# django的重量级体现，登录注册直接提供封装好的类
+
 from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.hashers import make_password
+from django.core.paginator import Paginator, \
+    InvalidPage, EmptyPage, PageNotAnInteger
+from django.shortcuts import render, redirect
+
+from blog.forms import *
+from blog.models import *
+
 # 使用setting.py中配置的日志器，一般都在views.py中使用日志器，因为这里都是业务逻辑
 logger = logging.getLogger('blog.views')
+
 
 # 用setting数据定义全局变量,返回一个字典
 
@@ -53,6 +51,7 @@ def global_setting(request):
     recommend_article_list = Article.objects.filter(is_recommend=True)
     return locals()
 
+
 # Create your views here.
 # 定义首页方法
 
@@ -61,7 +60,7 @@ def index(request):
     try:
         # pdb.set_trace()
         article_list = Article.objects.all()
-        article_list = getPage(request,article_list)
+        article_list = getPage(request, article_list)
     except Exception as e:
         # 如果出现异常就写入日志
         logger.error(e)
@@ -74,7 +73,7 @@ def archive(request):
         year = request.GET.get('year', None)
         month = request.GET.get('month', None)
         # 同样的文章分页,但是用到filter()做模糊查询
-        article_list = Article.objects.filter\
+        article_list = Article.objects.filter \
             (date_publish__icontains=year + '-' + month)
         article_list = getPage(article_list)
     except Exception as e:
@@ -128,11 +127,11 @@ def article(request):
         # 这里初始化了一个评论表单的对象供article.html使用。
         # 这个是用于分别处理登陆情况和未登录情况下默认写入哪些值，提高用户体验
         comment_form = CommentForm({
-            'author': request.user.username,
-            'email': request.user.email,
-            'url': request.user.url,
-            'article': id} if request.user.
-            is_authenticated() else{'article': id})
+                                       'author': request.user.username,
+                                       'email': request.user.email,
+                                       'url': request.user.url,
+                                       'article': id} if request.user.
+                                   is_authenticated() else{'article': id})
         # 获取评论信息
         # 注意这个技巧：用一行把文章对应的评论都取出来之后对结果进行归类，只取一次，推荐
         comments = Comment.objects.filter(article=article).order_by('id')
@@ -149,11 +148,11 @@ def article(request):
             # 父级评论为空，说明本身就是最顶层的评论
             if comment.pid is None:
                 comment_list.append(comment)
-        # 还可以在获取查询结果的时候进行归类处理，要用到Q查询（读取数据库次数较多，不推荐）
-        # 先取出所有父级评论
-        # comments = Comment.objects.filter(article=article, pid=None).order_by('id')
-        # 再取出下级评论
-        # comments = Comment.objects.filter(article=article,Q(pid=None)).order_by('id')
+                # 还可以在获取查询结果的时候进行归类处理，要用到Q查询（读取数据库次数较多，不推荐）
+                # 先取出所有父级评论
+                # comments = Comment.objects.filter(article=article, pid=None).order_by('id')
+                # 再取出下级评论
+                # comments = Comment.objects.filter(article=article,Q(pid=None)).order_by('id')
     except Exception as e:
         print (e)
         logger.error(e)
@@ -178,9 +177,9 @@ def comment_post(request):
                 user=request.user if request.user.is_authenticated() else None)
             comment.save()
         else:
-        # 没通过就写入error，主要是清除session
+            # 没通过就写入error，主要是清除session
             return render(request, 'failure.html',
-                {'reason': comment_form.errors})
+                          {'reason': comment_form.errors})
     except Exception as e:
         logger.error(e)
         # 注销之后跳转回之前的页面
@@ -196,6 +195,7 @@ def do_logout(request):
         print (e)
         logger.error(e)
     return redirect(request.META['HTTP_REFERER'])
+
 
 # 注册
 
@@ -213,7 +213,7 @@ def do_reg(request):
                     email=reg_form.cleaned_data["email"],
                     url=reg_form.cleaned_data["url"],
                     # 用户明文提交，不过我们是以加密形式保存密码，就用django提供的密码加密方法，这里用它默认的加密方式
-                    password=make_password(reg_form.cleaned_data["password"]),)
+                    password=make_password(reg_form.cleaned_data["password"]), )
                 user.save()
 
                 # 注册完之后就登录
@@ -225,12 +225,13 @@ def do_reg(request):
                 return redirect(request.POST.get('source_url'))
             else:
                 return render(request, 'failure.html',
-                    {'reason': reg_form.errors})
+                              {'reason': reg_form.errors})
         else:
             reg_form = RegForm()
     except Exception as e:
         logger.error(e)
     return render(request, 'reg.html', locals())
+
 
 # 登录
 
@@ -252,8 +253,8 @@ def do_login(request):
                     login(request, user)
                 # 否则就跳转到登录失败
                 else:
-                    return render(request, 'failure.html', 
-                        {'reason': '登录验证失败'})
+                    return render(request, 'failure.html',
+                                  {'reason': '登录验证失败'})
                 return redirect(request.POST.get('source_url'))
             else:
                 return render(request, 'failure.html', {'reason': login_form.errors})
@@ -263,6 +264,7 @@ def do_login(request):
     except Exception as e:
         logger.error(e)
     return render(request, 'login.html', locals())
+
 
 # 分类
 
